@@ -1,4 +1,4 @@
-import Home from './app/home/Home';
+import Home from './home/Home';
 
 export const ROUTES = {
   HOME: {
