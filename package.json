@@ -27,6 +27,8 @@
     "dotenv-webpack": "^1.5.7"
   },
   "devDependencies": {
+    "postcss": "^7.0.5",
+    "postcss-cli": "^6.0.1",
     "autoprefixer": "^9.2.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-env": "^7.1.5",
