@@ -1,5 +1,15 @@
 :local(.Home) {
-  .secondary-text {
-    color: blue;
+  .name {
+    font-size: 4rem;
+    .secondary-text {
+      color: blue;
+    }
+  }
+  .footer-name-copyright {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
   }
 }
