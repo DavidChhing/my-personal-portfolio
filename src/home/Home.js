@@ -3,15 +3,28 @@ import PropTypes from 'prop-types';
 import styles from './Home.scss';
 import { MdMenu as Menu } from 'react-icons/md';
 import { FaLinkedin as LinkedIn, FaGithub as Github } from 'react-icons/fa';
+import { FiX as XMark } from 'react-icons/fi';
 
 export default class Home extends Component {
-  handleHamburgerMenuClick = () => {
-    console.log('clicked');
+  state = {
+    isCurrentlyOpen: true,
   };
+
+  handleHamburgerMenuClick = () => {
+    this.setState(prevState => ({
+      isCurrentlyOpen: !prevState.isCurrentlyOpen,
+    }));
+  };
+
   render() {
+    const { isCurrentlyOpen } = this.state;
+
     return (
       <main className={styles.Home}>
-        <HamburgerMenu click={this.handleHamburgerMenuClick} Icon={Menu} />
+        <HamburgerMenu
+          click={this.handleHamburgerMenuClick}
+          isCurrentlyOpen={isCurrentlyOpen}
+        />
         <h1 className="name">
           David
           <span className="secondary-text">Chhing</span>
@@ -36,17 +49,22 @@ export default class Home extends Component {
 }
 
 const HamburgerMenu = props => {
-  const { Icon, click } = props;
+  const { isCurrentlyOpen, click } = props;
 
   return (
-    <button onClick={click} className="hamburger-menu">
-      <Icon />
+    <button
+      onClick={click}
+      className={`button ${
+        isCurrentlyOpen ? 'hamburger-menu-icon' : 'XMark-icon'
+      }`}
+    >
+      {isCurrentlyOpen ? <Menu /> : <XMark />}
     </button>
   );
 };
 
 HamburgerMenu.propTypes = {
-  Icon: PropTypes.func.isRequired,
+  isCurrentlyOpen: PropTypes.bool.isRequired,
   click: PropTypes.func.isRequired,
 };
 
