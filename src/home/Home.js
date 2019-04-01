@@ -78,7 +78,7 @@ const HamburgerMenu = props => {
               Projects
             </Link>
             <Link to="/contact" className="nav-links">
-              Contact Me
+              Contact
             </Link>
           </div>
         )}

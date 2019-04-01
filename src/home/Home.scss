@@ -7,9 +7,9 @@
     width: 100%;
     text-align: center;
 
-    // margin-top: 20vh;
     .secondary-text {
       color: blue;
+      margin-left: 1rem;
     }
   }
   .icon-container {
@@ -42,6 +42,8 @@
   .nav-links-container {
     font-size: 1.3rem;
     margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
 
     .nav-links {
       text-decoration: none;
