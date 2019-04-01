@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Home.scss';
@@ -9,22 +9,25 @@ import { FiX as XMark } from 'react-icons/fi';
 export default class Home extends Component {
   state = {
     isCurrentlyOpen: true,
+    isLinksVisible: false,
   };
 
   handleHamburgerMenuClick = () => {
     this.setState(prevState => ({
       isCurrentlyOpen: !prevState.isCurrentlyOpen,
+      isLinksVisible: !prevState.isLinksVisible,
     }));
   };
 
   render() {
-    const { isCurrentlyOpen } = this.state;
+    const { isCurrentlyOpen, isLinksVisible } = this.state;
 
     return (
       <main className={styles.Home}>
         <HamburgerMenu
           click={this.handleHamburgerMenuClick}
           isCurrentlyOpen={isCurrentlyOpen}
+          isLinksVisible={isLinksVisible}
         />
         <h1 className="name">
           David
@@ -40,10 +43,7 @@ export default class Home extends Component {
             route={'https://www.github.com/davidchhing'}
           />
         </span>
-        <Link to="/home">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact Me</Link>
+
         <footer className="footer-name-copyright">
           Handcrafted by David Chhing 2019 &copy;
         </footer>
@@ -53,23 +53,44 @@ export default class Home extends Component {
 }
 
 const HamburgerMenu = props => {
-  const { isCurrentlyOpen, click } = props;
+  const { isCurrentlyOpen, click, isLinksVisible } = props;
 
   return (
-    <button
-      onClick={click}
-      className={`button ${
-        isCurrentlyOpen ? 'hamburger-menu-icon' : 'XMark-icon'
-      }`}
-    >
-      {isCurrentlyOpen ? <Menu /> : <XMark />}
-    </button>
+    <Fragment>
+      <button
+        onClick={click}
+        className={`button ${
+          isCurrentlyOpen ? 'hamburger-menu-icon' : 'XMark-icon'
+        }`}
+      >
+        {isCurrentlyOpen ? <Menu /> : <XMark />}
+      </button>
+      <div>
+        {isLinksVisible && (
+          <div className="nav-links-container">
+            <Link to="/home" className="nav-links">
+              Home
+            </Link>
+            <Link to="/about" className="nav-links">
+              About
+            </Link>
+            <Link to="/projects" className="nav-links">
+              Projects
+            </Link>
+            <Link to="/contact" className="nav-links">
+              Contact Me
+            </Link>
+          </div>
+        )}
+      </div>
+    </Fragment>
   );
 };
 
 HamburgerMenu.propTypes = {
   isCurrentlyOpen: PropTypes.bool.isRequired,
   click: PropTypes.func.isRequired,
+  isLinksVisible: PropTypes.bool.isRequired,
 };
 
 const SocialMediaIcons = props => {
