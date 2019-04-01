@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Home.scss';
 import { MdMenu as Menu } from 'react-icons/md';
@@ -39,7 +40,10 @@ export default class Home extends Component {
             route={'https://www.github.com/davidchhing'}
           />
         </span>
-
+        <Link to="/home">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact Me</Link>
         <footer className="footer-name-copyright">
           Handcrafted by David Chhing 2019 &copy;
         </footer>
@@ -87,3 +91,20 @@ SocialMediaIcons.propTypes = {
   Icon: PropTypes.func.isRequired,
   route: PropTypes.string.isRequired,
 };
+
+// const NavigationListItems = props => {
+//   return (
+//     <section>
+//       <Link to="/home">Home</Link>
+//       <Link to="/about">About</Link>
+//       <Link to="/projects">Projects</Link>
+//       <Link to="/contact">Contact Me</Link>
+//       {/* <ul>
+//         <li>Home Page</li>
+//         <li>About Me</li>
+//         <li>Projects</li>
+//         <li>Contact Me</li>
+//       </ul> */}
+//     </section>
+//   );
+// };
