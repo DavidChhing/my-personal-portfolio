@@ -1,0 +1,20 @@
+@import '../styles/Variables.scss';
+
+:local(.About) {
+  position: relative;
+  min-height: 129vh;
+  text-align: center;
+  .header {
+    font-family: $default-header-font;
+  }
+  .content-container {
+    font-family: $default-body-font;
+    margin: 0 1rem;
+    border: 2px solid black;
+    padding: 1rem;
+
+    .container-subheaders {
+      font-family: $default-subheader-font;
+    }
+  }
+}

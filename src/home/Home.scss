@@ -1,5 +1,11 @@
+@import '../styles/Variables.scss';
+
 :local(.Home) {
+  position: relative;
+  min-height: 99vh;
+
   .name {
+    font-family: $default-header-font;
     font-size: 4rem;
     position: absolute;
     left: 0;
@@ -12,43 +18,22 @@
       margin-left: 1rem;
     }
   }
+
+  .developer-text {
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: 44%;
+    width: 100%;
+    text-align: center;
+    font-family: $default-body-font;
+  }
   .icon-container {
     display: flex;
     justify-content: center;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 56%;
     width: 100%;
-
-    .icon-buttons {
-      font-size: 3rem;
-      margin: 1rem;
-    }
-  }
-  .footer-name-copyright {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    font-size: 1.2rem;
-  }
-  .hamburger-menu-icon,
-  .XMark-icon {
-    font-size: 2.4rem;
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
-  .nav-links-container {
-    font-size: 1.3rem;
-    margin-top: 4rem;
-    display: flex;
-    justify-content: space-around;
-
-    .nav-links {
-      text-decoration: none;
-      margin: 1rem;
-      margin-top: 3rem;
-    }
   }
 }
