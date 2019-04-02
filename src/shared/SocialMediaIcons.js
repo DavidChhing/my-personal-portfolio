@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './SocialMediaIcons.scss';
 
 export default function SocialMediaIcons(props) {
-  const { Icon, route } = props;
+  const { Icon, route, text } = props;
   return (
     <div className={styles.SocialMediaIcons}>
       <a
@@ -12,6 +12,7 @@ export default function SocialMediaIcons(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
+        <p className="text">{text} </p>
         <Icon />
       </a>
     </div>
@@ -21,4 +22,5 @@ export default function SocialMediaIcons(props) {
 SocialMediaIcons.propTypes = {
   Icon: PropTypes.func.isRequired,
   route: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };

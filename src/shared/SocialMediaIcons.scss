@@ -2,5 +2,17 @@
   .icon-buttons {
     font-size: 3rem;
     margin: 1rem;
+    color: black;
+    :hover {
+      color: darkgray;
+    }
+  }
+  .text {
+    visibility: hidden;
+    font-size: 1rem;
+    color: black;
+  }
+  :hover .text {
+    visibility: visible;
   }
 }
