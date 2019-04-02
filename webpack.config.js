@@ -40,20 +40,10 @@ module.exports = {
         ],
       },
       {
-        test: /\.(pdf|jpg|png|gif|ico)$/,
+        test: /\.(pdf|jpg|png|gif|ico|svg|jpeg)$/,
         use: {
           loader: 'url-loader',
-          options: { limit: 5000 },
-        },
-      },
-      {
-        test: /\.svg$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-            mimetype: 'image/svg+xml',
-          },
+          options: { limit: 100000 },
         },
       },
     ],
