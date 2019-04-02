@@ -113,19 +113,3 @@ SocialMediaIcons.propTypes = {
   route: PropTypes.string.isRequired,
 };
 
-// const NavigationListItems = props => {
-//   return (
-//     <section>
-//       <Link to="/home">Home</Link>
-//       <Link to="/about">About</Link>
-//       <Link to="/projects">Projects</Link>
-//       <Link to="/contact">Contact Me</Link>
-//       {/* <ul>
-//         <li>Home Page</li>
-//         <li>About Me</li>
-//         <li>Projects</li>
-//         <li>Contact Me</li>
-//       </ul> */}
-//     </section>
-//   );
-// };
