@@ -32,6 +32,7 @@ export default class Home extends Component {
           David
           <span className="secondary-text">Chhing</span>
         </h1>
+        <h2 className="developer-text">Full-Stack Developer</h2>
         <span className="icon-container">
           <SocialMediaIcons
             Icon={LinkedIn}
