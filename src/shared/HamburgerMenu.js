@@ -1,14 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FiX as XMark } from 'react-icons/fi';
 import { MdMenu as Menu } from 'react-icons/md';
+import styles from './HamburgerMenu.scss';
 
 export default function HamburgerMenu(props) {
   const { isCurrentlyOpen, click, isLinksVisible } = props;
 
   return (
-    <Fragment>
+    <nav className={styles.HamburgerMenu}>
       <button
         onClick={click}
         className={`button ${
@@ -35,7 +36,7 @@ export default function HamburgerMenu(props) {
           </div>
         )}
       </div>
-    </Fragment>
+    </nav>
   );
 }
 
