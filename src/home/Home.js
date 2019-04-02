@@ -3,6 +3,7 @@ import styles from './Home.scss';
 import { FaLinkedin as LinkedIn, FaGithub as Github } from 'react-icons/fa';
 import HamburgerMenu from '../shared/HamburgerMenu';
 import SocialMediaIcons from '../shared/SocialMediaIcons';
+import PageFooterCopyright from '../shared/page-footer-copyright/PageFooterCopyright';
 
 export default class Home extends Component {
   state = {
@@ -41,10 +42,7 @@ export default class Home extends Component {
             route={'https://www.github.com/davidchhing'}
           />
         </span>
-
-        <footer className="footer-name-copyright">
-          Handcrafted by David Chhing 2019 &copy;
-        </footer>
+        <PageFooterCopyright />
       </main>
     );
   }
