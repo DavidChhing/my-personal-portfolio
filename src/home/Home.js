@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Home.scss';
 import { FaLinkedin as LinkedIn, FaGithub as Github } from 'react-icons/fa';
+import { IoIosPaper as Resume } from 'react-icons/io';
 import HamburgerMenu from '../shared/HamburgerMenu';
 import SocialMediaIcons from '../shared/SocialMediaIcons';
 import PageFooterCopyright from '../shared/page-footer-copyright/PageFooterCopyright';
@@ -37,10 +38,19 @@ export default class Home extends Component {
           <SocialMediaIcons
             Icon={LinkedIn}
             route={'https://www.linkedin.com/in/davidchhing'}
+            text="Linked In"
           />
           <SocialMediaIcons
             Icon={Github}
             route={'https://www.github.com/davidchhing'}
+            text="Github"
+          />
+          <SocialMediaIcons
+            Icon={Resume}
+            route={
+              'https://drive.google.com/open?id=1NQMqwjS31gDDnczace6_qufZFA4ZaVGP'
+            }
+            text="Resume"
           />
         </span>
         <PageFooterCopyright />
