@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './SocialMediaIcons.scss';
 
 export default function SocialMediaIcons(props) {
-  const { Icon, route, text } = props;
+  const { Icon, route = true, text = true } = props;
   return (
     <div className={styles.SocialMediaIcons}>
       <a
