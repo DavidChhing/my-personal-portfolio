@@ -2,7 +2,7 @@
   text-align: center;
   .form {
     border: 1px solid blue;
-    margin: 3rem 1.5rem 0 1.5rem;
+    margin: 1rem 1.5rem 0 1.5rem;
 
     .form-group {
       margin: 2rem 0 2rem 0;
@@ -31,7 +31,24 @@
 
   .bottom-half-contact {
     border: 1px solid blue;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
+    max-width: 80vw;
+    max-height: 20vh;
+    margin-top: 5vh;
+    line-height: 1.5;
+    dl {
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+    }
+    dt {
+      float: left;
+      width: 28%;
+    }
+
+    dd {
+      float: right;
+      width: 50%;
+      text-align: start;
+    }
   }
 }

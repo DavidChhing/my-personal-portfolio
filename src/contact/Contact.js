@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Contact.scss';
 import HamburgerMenu from '../shared/HamburgerMenu';
-import PageFooterCopyright from '../shared/page-footer-copyright/PageFooterCopyright';
 import { MdMailOutline as Email, MdLocalPhone as Phone } from 'react-icons/md';
-import SocialMediaIcons from '../shared/SocialMediaIcons';
 
 export default class Contact extends Component {
   state = {
@@ -115,31 +113,31 @@ export default class Contact extends Component {
             />
           </div>
         </form>
-        <section className="bottom-half-contact">
-          <h1>OR</h1>
-          <h1>Contact me by</h1>
-          <a
-            href="mailto:davidhchhing@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          />
-          <h3>
-            Email:
-            <SocialMediaIcons
-              Icon={Email}
-              route={'mailto:davidhchhing@gmail.com'}
-              text={false}
-            />
-            DavidHChhing@gmail.com
-          </h3>
-          <h3>
-            Phone:
-            <SocialMediaIcons Icon={Phone} route={false} text={false} />
-            971-570-6899
-          </h3>
-        </section>
 
-        {/* <PageFooterCopyright /> */}
+        <section className="bottom-half-contact">
+          <dl>
+            <dt>Email:</dt>
+            <dd>
+              <a
+                href="mailto:davidhchhing@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="email-icon">
+                  <Email />
+                </i>
+                DavidHChhing@gmail.com
+              </a>
+            </dd>
+            <dt>Phone:</dt>
+            <dd>
+              <i className="phoneIcon">
+                <Phone />
+              </i>
+              971-570-6899
+            </dd>
+          </dl>
+        </section>
       </main>
     );
   }
