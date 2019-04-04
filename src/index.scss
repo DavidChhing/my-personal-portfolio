@@ -1,3 +1,4 @@
+@import './styles/Variables.scss';
 // CUSTOM RESETS
 // add any additional resets here
 
@@ -206,7 +207,7 @@ input,
 select,
 textarea {
   color: rgba(255, 255, 255, 0.75);
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Mukta Vaani', sans-serif;
   font-size: 14pt;
   font-weight: 300;
   line-height: 1.65;
@@ -297,6 +298,18 @@ h6 {
   font-weight: 400;
   line-height: 1.5;
   margin: 0 0 1em 0;
+}
+
+h1 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 a,

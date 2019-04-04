@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Projects.scss';
 import HamburgerMenu from '../shared/HamburgerMenu';
-import { FaGithub as Github } from 'react-icons/fa';
 export default class Projects extends Component {
   state = {
     isCurrentlyOpen: true,
@@ -27,44 +26,13 @@ export default class Projects extends Component {
         />
         <h1>Check out some of my previous projects!</h1>
 
-        {/* <ul className="projects-container">
-          <li className="project">
-            <a href="">
-              <img
-                className="project-image"
-                src={require('../assets/img/bitfrost.jpg')}
-                alt="Bitfront ride sharing app"
-              />
-            </a>
-            <p>
-              A Ride-Sharing app that uses FireBase/FireStore to push real-time
-              ride posting to all users. Database is stored in MongoDB from a
-              Node/express backend. GraphQL connects a React and Redux
-              structured client side App. O-Auth for authentication and a
-              CSS-in-JS approach to UI design. Built with a small team in less
-              than a week.
-            </p>
-            <a
-              href="https://github.com/team-electric/bitfrost"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-dark"
-            >
-              <i className="github">
-                <Github />
-              </i>
-              Github
-            </a>
-          </li>
-        </ul> 0*/}
-
         <section className="main-container">
           <div className="inner-container">
             <div className="thumbnails">
               <div className="box">
-                <a href="https://youtu.be/s6zR2T9vn2c" className="image fit">
+                <div className="image fit">
                   <img src={require('../assets/img/bitfrost.jpg')} alt="" />
-                </a>
+                </div>
                 <div className="inner-content">
                   <h3>BitFrost</h3>
                   <p>
@@ -88,96 +56,46 @@ export default class Projects extends Component {
             </div>
             <div className="thumbnails">
               <div className="box">
-                <a href="https://youtu.be/s6zR2T9vn2c" className="image fit">
+                <div className="image fit">
                   <img
-                    src={require('../assets/img/bitfrost.jpg')}
+                    src={require('../assets/img/yoyochinese.jpg')}
                     alt=""
                     className="project-image"
                   />
-                </a>
+                </div>
                 <div className="inner-content">
-                  <h3>Nascetur nunc varius commodo</h3>
-                  <p>
-                    Interdum amet accumsan placerat commodo ut amet aliquam
-                    blandit nunc tempor lobortis nunc non. Mi accumsan.
-                  </p>
+                  <h3>Yoyo-Chinese</h3>
+                  <p>A mobile language learning application for Mandarin.</p>
                   <a
-                    href="https://youtu.be/s6zR2T9vn2c"
+                    href="https://yoyo-chinese.firebaseapp.com/learn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="button fit"
-                    data-poptrox="youtube,800x400"
                   >
-                    Github
+                    Link to live version
                   </a>
                 </div>
               </div>
             </div>
             <div className="thumbnails">
               <div className="box">
-                <a href="https://youtu.be/s6zR2T9vn2c" className="image fit">
+                <div className="image fit">
                   <img
-                    src={require('../assets/img/bitfrost.jpg')}
+                    src={require('../assets/img/dogSearch.jpg')}
                     alt=""
                     className="project-image"
                   />
-                </a>
-                <div className="inner-content">
-                  <h3>Nascetur nunc varius commodo</h3>
-                  <p>
-                    Interdum amet accumsan placerat commodo ut amet aliquam
-                    blandit nunc tempor lobortis nunc non. Mi accumsan.
-                  </p>
-                  <a
-                    href="https://youtu.be/s6zR2T9vn2c"
-                    className="button fit"
-                    data-poptrox="youtube,800x400"
-                  >
-                    Github
-                  </a>
                 </div>
-              </div>
-            </div>
-            <div className="thumbnails">
-              <div className="box">
-                <a href="https://youtu.be/s6zR2T9vn2c" className="image fit">
-                  <img
-                    src={require('../assets/img/bitfrost.jpg')}
-                    alt=""
-                    className="project-image"
-                  />
-                </a>
                 <div className="inner-content">
-                  <h3>Nascetur nunc varius commodo</h3>
+                  <h3>Dog Match</h3>
                   <p>
-                    Interdum amet accumsan placerat commodo ut amet aliquam
-                    blandit nunc tempor lobortis nunc non. Mi accumsan.
+                    It was designed for potential buyers and sellers to provide
+                    dog information such as cost, location, breed, etc. It was
+                    built using Node and mongoDB on the backend, and tested with
+                    postman and Heroku on the front end.
                   </p>
                   <a
-                    href="https://youtu.be/s6zR2T9vn2c"
-                    className="button fit"
-                    data-poptrox="youtube,800x400"
-                  >
-                    Github
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="thumbnails">
-              <div className="box">
-                <a href="https://youtu.be/s6zR2T9vn2c" className="image fit">
-                  <img
-                    src={require('../assets/img/bitfrost.jpg')}
-                    alt=""
-                    className="project-image"
-                  />
-                </a>
-                <div className="inner-content">
-                  <h3>Nascetur nunc varius commodo</h3>
-                  <p>
-                    Interdum amet accumsan placerat commodo ut amet aliquam
-                    blandit nunc tempor lobortis nunc non. Mi accumsan.
-                  </p>
-                  <a
-                    href="https://youtu.be/s6zR2T9vn2c"
+                    href="https://github.com/teamcasper/dog-match"
                     className="button fit"
                     data-poptrox="youtube,800x400"
                   >
