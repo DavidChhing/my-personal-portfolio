@@ -14,6 +14,7 @@ export default class Projects extends Component {
       isLinksVisible: !prevState.isLinksVisible,
     }));
   };
+
   render() {
     const { isCurrentlyOpen, isLinksVisible } = this.state;
 
@@ -61,10 +62,40 @@ export default class Projects extends Component {
           <div className="inner-container">
             <div className="thumbnails">
               <div className="box">
-                <a href="https://youtu.be/s6zR2T9vn2c" className="image-fit">
-                  <img src="images/pic01.jpg" alt="" />
+                <a href="https://youtu.be/s6zR2T9vn2c" className="image fit">
+                  <img src={require('../assets/img/bitfrost.jpg')} alt="" />
                 </a>
-                <div className="inner">
+                <div className="inner-content">
+                  <h3>BitFrost</h3>
+                  <p>
+                    A Ride-Sharing app that uses FireBase/FireStore to push
+                    real-time ride posting to all users. Database is stored in
+                    MongoDB from a Node/express backend. GraphQL connects a
+                    React and Redux structured client side App. O-Auth for
+                    authentication and a CSS-in-JS approach to UI design. Built
+                    with a small team in less than a week.
+                  </p>
+                  <a
+                    href="https://github.com/team-electric/bitfrost"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button fit"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="thumbnails">
+              <div className="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" className="image fit">
+                  <img
+                    src={require('../assets/img/bitfrost.jpg')}
+                    alt=""
+                    className="project-image"
+                  />
+                </a>
+                <div className="inner-content">
                   <h3>Nascetur nunc varius commodo</h3>
                   <p>
                     Interdum amet accumsan placerat commodo ut amet aliquam
@@ -75,7 +106,82 @@ export default class Projects extends Component {
                     className="button fit"
                     data-poptrox="youtube,800x400"
                   >
-                    Watch
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="thumbnails">
+              <div className="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" className="image fit">
+                  <img
+                    src={require('../assets/img/bitfrost.jpg')}
+                    alt=""
+                    className="project-image"
+                  />
+                </a>
+                <div className="inner-content">
+                  <h3>Nascetur nunc varius commodo</h3>
+                  <p>
+                    Interdum amet accumsan placerat commodo ut amet aliquam
+                    blandit nunc tempor lobortis nunc non. Mi accumsan.
+                  </p>
+                  <a
+                    href="https://youtu.be/s6zR2T9vn2c"
+                    className="button fit"
+                    data-poptrox="youtube,800x400"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="thumbnails">
+              <div className="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" className="image fit">
+                  <img
+                    src={require('../assets/img/bitfrost.jpg')}
+                    alt=""
+                    className="project-image"
+                  />
+                </a>
+                <div className="inner-content">
+                  <h3>Nascetur nunc varius commodo</h3>
+                  <p>
+                    Interdum amet accumsan placerat commodo ut amet aliquam
+                    blandit nunc tempor lobortis nunc non. Mi accumsan.
+                  </p>
+                  <a
+                    href="https://youtu.be/s6zR2T9vn2c"
+                    className="button fit"
+                    data-poptrox="youtube,800x400"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="thumbnails">
+              <div className="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" className="image fit">
+                  <img
+                    src={require('../assets/img/bitfrost.jpg')}
+                    alt=""
+                    className="project-image"
+                  />
+                </a>
+                <div className="inner-content">
+                  <h3>Nascetur nunc varius commodo</h3>
+                  <p>
+                    Interdum amet accumsan placerat commodo ut amet aliquam
+                    blandit nunc tempor lobortis nunc non. Mi accumsan.
+                  </p>
+                  <a
+                    href="https://youtu.be/s6zR2T9vn2c"
+                    className="button fit"
+                    data-poptrox="youtube,800x400"
+                  >
+                    Github
                   </a>
                 </div>
               </div>

@@ -1,23 +1,4 @@
 :local(.Projects) {
-  border: 1px solid black;
-
-  // .projects-container {
-  //   display: grid;
-  //   grid-gap: 1rem;
-  //   .project {
-  //     list-style: none;
-
-  //     .project-image {
-  //       width: 20rem;
-  //       height: 20rem;
-  //     }
-
-  //     .github {
-  //       font-size: 1.5rem;
-  //     }
-  //   }
-  // }
-
   .main-container {
     padding: 4em 0 2em 0;
 
@@ -45,28 +26,60 @@
         flex-wrap: wrap;
 
         .box {
-          margin: 0 1em 2em 1em;
-          width: 30%;
           border-radius: 4px;
           margin-bottom: 2em;
           background: #2c2c32;
           text-align: center;
+
+          .image,
+          img {
+            border-radius: 4px;
+            display: inline-block;
+
+            border: 0;
+            position: relative;
+          }
+
+          .image.fit {
+            display: block;
+            width: 100%;
+          }
+
+          .image.fit img {
+            width: 100%;
+          }
+
+          .inner-content {
+            padding: 1.5em;
+            width: 100% !important;
+          }
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    .thumbnails,
+    .box {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   @media screen and (max-width: 1280px) {
     .thumbnails,
     .box {
-      width: 45%;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   @media screen and (max-width: 736px) {
     .thumbnails,
     .box {
-      width: 100%;
+      width: 95%;
     }
   }
 
@@ -78,8 +91,16 @@
 
   @media screen and (max-width: 480px) {
     .main-container,
-    .inner {
+    .inner-container {
       width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: 736px) {
+    .main-container {
+      padding: 3em 0 1em 0;
     }
   }
 }
