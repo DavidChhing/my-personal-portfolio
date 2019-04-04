@@ -1,0 +1,54 @@
+:local(.Contact) {
+  text-align: center;
+  .form {
+    border: 1px solid blue;
+    margin: 3rem 1.5rem 0 1.5rem;
+
+    .form-group {
+      margin: 2rem 0 2rem 0;
+      padding: 0;
+      border: 0;
+
+      .form-textarea {
+        resize: vertical;
+      }
+
+      .form-input,
+      .form-textarea {
+        display: block;
+        padding: 0.5rem 0.75rem;
+        width: 100%;
+        border-bottom: 2px solid silver;
+      }
+      .submit-button {
+        width: 9rem;
+        height: 3rem;
+        border-radius: 7%;
+        background-color: orange;
+      }
+    }
+  }
+
+  .bottom-half-contact {
+    border: 1px solid blue;
+    max-width: 80vw;
+    max-height: 20vh;
+    margin-top: 5vh;
+    line-height: 1.5;
+    dl {
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+    }
+    dt {
+      float: left;
+      width: 28%;
+    }
+
+    dd {
+      float: right;
+      width: 50%;
+      text-align: start;
+    }
+  }
+}
