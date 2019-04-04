@@ -24,6 +24,11 @@ export default class Home extends Component {
 
     return (
       <main className={styles.Home}>
+        {/* <img
+          className="background-img"
+          src={require('../assets/img/background.jpeg')}
+          alt="Bitfront ride sharing app"
+        /> */}
         <HamburgerMenu
           click={this.handleHamburgerMenuClick}
           isCurrentlyOpen={isCurrentlyOpen}
