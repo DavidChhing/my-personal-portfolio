@@ -1,6 +1,12 @@
 :local(.HamburgerMenu) {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+
   .hamburger-menu-icon,
   .XMark-icon {
+    z-index: 20;
     position: fixed;
     top: 0;
     right: 0;
@@ -24,12 +30,18 @@
   .nav-links-container {
     font-size: 1.3rem;
     display: flex;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    background: rgba(87, 80, 80, 0.82);
+    line-height: 4;
+    height: -webkit-fill-available;
 
     .nav-links {
       text-decoration: none;
-      margin: 1rem;
-      margin-top: 3rem;
+      z-index: 5;
     }
   }
 }
