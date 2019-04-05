@@ -1,0 +1,238 @@
+:local(.Projects) {
+  .subtitle {
+    margin: 0 0 1em 0;
+    font-size: 3rem;
+  }
+
+  .lines {
+    margin-top: 4rem;
+    line-height: 0.05;
+    text-align: center;
+  }
+
+  .lines span {
+    display: inline-block;
+    position: relative;
+  }
+
+  // .lines span:before,
+  // .lines span:after {
+  //   content: '';
+  //   position: absolute;
+  //   height: 5px;
+  //   border-bottom: 1px solid white;
+  //   border-top: 1px solid white;
+  //   top: 0;
+  //   width: 600px;
+  // }
+
+  .lines span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+
+  .lines span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+  .main-container {
+    padding: 2em 0 2em 0;
+
+    .inner-container {
+      width: 90%;
+      max-width: 80em;
+      margin: 0 auto;
+
+      .thumbnails {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-align-items: stretch;
+        -webkit-align-items: stretch;
+        -ms-align-items: stretch;
+        align-items: stretch;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -moz-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        .box {
+          border-radius: 4px;
+          margin-bottom: 2em;
+          background: #2c2c32;
+          text-align: center;
+
+          .image,
+          img {
+            border-radius: 4px;
+            display: inline-block;
+
+            border: 0;
+            position: relative;
+          }
+
+          .image.fit {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+          }
+
+          .image.fit img {
+            width: 100%;
+          }
+
+          .inner-content {
+            padding: 1.5em;
+            width: 100% !important;
+          }
+        }
+      }
+    }
+
+    input[type='submit']:hover,
+    input[type='reset']:hover,
+    input[type='button']:hover,
+    button:hover,
+    .button:hover {
+      // background-color: #82cec6;
+      background-color: #308f85;
+    }
+
+    input[type='submit'].style2,
+    input[type='reset'].style2,
+    input[type='button'].style2,
+    button.style2,
+    .button.style2 {
+      background-color: #7f92cf;
+    }
+
+    input[type='submit'].style2:hover,
+    input[type='reset'].style2:hover,
+    input[type='button'].style2:hover,
+    button.style2:hover,
+    .button.style2:hover {
+      background-color: #5573d3;
+    }
+
+    input[type='submit'].style2:active,
+    input[type='reset'].style2:active,
+    input[type='button'].style2:active,
+    button.style2:active,
+    .button.style2:active {
+      background-color: #6c82c8;
+    }
+
+    input[type='submit'].style3,
+    input[type='reset'].style3,
+    input[type='button'].style3,
+    button.style3,
+    .button.style3 {
+      background-color: #9d7ed0;
+    }
+
+    input[type='submit'].style3:hover,
+    input[type='reset'].style3:hover,
+    input[type='button'].style3:hover,
+    button.style3:hover,
+    .button.style3:hover {
+      background-color: #7132df;
+    }
+
+    input[type='submit'].style3:active,
+    input[type='reset'].style3:active,
+    input[type='button'].style3:active,
+    button.style3:active,
+    .button.style3:active {
+      background-color: #8f6bc9;
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    .thumbnails,
+    .box {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .lines span:before,
+    .lines span:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      top: 0;
+      width: 750px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .thumbnails,
+    .box {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .lines span:before,
+    .lines span:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      top: 0;
+      width: 450px;
+    }
+  }
+
+  @media screen and (max-width: 736px) {
+    .thumbnails,
+    .box {
+      width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 736px) {
+    .main-container {
+      padding: 3em 0 1em 0;
+    }
+
+    .lines span:before,
+    .lines span:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      top: 0;
+      width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .main-container,
+    .inner-container {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .lines span:before,
+    .lines span:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      // top: 0;
+      width: 100px;
+    }
+  }
+}

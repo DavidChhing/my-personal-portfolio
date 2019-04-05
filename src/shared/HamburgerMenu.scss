@@ -1,11 +1,26 @@
 :local(.HamburgerMenu) {
   .hamburger-menu-icon,
   .XMark-icon {
-    font-size: 2.4rem;
     position: fixed;
     top: 0;
     right: 0;
   }
+
+  .hamburger-menu-icon {
+    background-color: #4885a7;
+  }
+
+  .XMark-icon {
+    background-color: #8468b1;
+  }
+
+  .XMark-icon:hover {
+    background-color: #5e29b3;
+  }
+  .hamburger-menu-icon:hover {
+    background-color: #016ba3;
+  }
+
   .nav-links-container {
     font-size: 1.3rem;
     display: flex;

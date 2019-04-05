@@ -5,7 +5,6 @@
   min-height: 99vh;
 
   .name {
-    font-family: $default-header-font;
     font-size: 4rem;
     position: absolute;
     left: 0;
@@ -26,7 +25,6 @@
     top: 44%;
     width: 100%;
     text-align: center;
-    font-family: $default-body-font;
   }
   .icon-container {
     display: flex;
