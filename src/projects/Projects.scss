@@ -93,6 +93,63 @@
         }
       }
     }
+
+    input[type='submit']:hover,
+    input[type='reset']:hover,
+    input[type='button']:hover,
+    button:hover,
+    .button:hover {
+      // background-color: #82cec6;
+      background-color: #308f85;
+    }
+
+    input[type='submit'].style2,
+    input[type='reset'].style2,
+    input[type='button'].style2,
+    button.style2,
+    .button.style2 {
+      background-color: #7f92cf;
+    }
+
+    input[type='submit'].style2:hover,
+    input[type='reset'].style2:hover,
+    input[type='button'].style2:hover,
+    button.style2:hover,
+    .button.style2:hover {
+      background-color: #5573d3;
+    }
+
+    input[type='submit'].style2:active,
+    input[type='reset'].style2:active,
+    input[type='button'].style2:active,
+    button.style2:active,
+    .button.style2:active {
+      background-color: #6c82c8;
+    }
+
+    input[type='submit'].style3,
+    input[type='reset'].style3,
+    input[type='button'].style3,
+    button.style3,
+    .button.style3 {
+      background-color: #9d7ed0;
+    }
+
+    input[type='submit'].style3:hover,
+    input[type='reset'].style3:hover,
+    input[type='button'].style3:hover,
+    button.style3:hover,
+    .button.style3:hover {
+      background-color: #7132df;
+    }
+
+    input[type='submit'].style3:active,
+    input[type='reset'].style3:active,
+    input[type='button'].style3:active,
+    button.style3:active,
+    .button.style3:active {
+      background-color: #8f6bc9;
+    }
   }
 
   @media screen and (max-width: 1600px) {

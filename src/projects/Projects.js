@@ -73,7 +73,7 @@ export default class Projects extends Component {
                     href="https://yoyo-chinese.firebaseapp.com/learn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="button fit"
+                    className="button style2 fit"
                   >
                     Link to live version
                   </a>
@@ -99,7 +99,7 @@ export default class Projects extends Component {
                   </p>
                   <a
                     href="https://github.com/teamcasper/dog-match"
-                    className="button fit"
+                    className="button style3 fit"
                     data-poptrox="youtube,800x400"
                   >
                     Github
