@@ -24,11 +24,11 @@ export default class Home extends Component {
 
     return (
       <main className={styles.Home}>
-        {/* <img
+        <img
           className="background-img"
-          src={require('../assets/img/background.jpeg')}
+          src={require('../assets/img/backgroundImage.jpg')}
           alt="Bitfront ride sharing app"
-        /> */}
+        />
         <HamburgerMenu
           click={this.handleHamburgerMenuClick}
           isCurrentlyOpen={isCurrentlyOpen}
