@@ -2,9 +2,18 @@
 :local(.PageFooterCopyright) {
   font-family: $default-body-font;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   text-align: center;
   width: 100%;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   height: 1.5rem;
+
+  @media screen and (max-width: 480px) and (min-width: 200px) {
+    bottom: -22px;
+    width: 100%;
+    // position: absolute;
+    // display: flex;
+    // justify-content: center;
+    left: 8px;
+  }
 }
