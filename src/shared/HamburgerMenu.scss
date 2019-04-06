@@ -28,20 +28,21 @@
   }
 
   .nav-links-container {
-    font-size: 1.3rem;
+    font-size: 2rem;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     float: left;
     width: 100%;
-    background: rgba(87, 80, 80, 0.82);
+    background: rgb(87, 80, 80);
     line-height: 4;
     height: -webkit-fill-available;
 
     .nav-links {
       text-decoration: none;
       z-index: 5;
+      font-family: 'Source Sans Pro', sans-serif;
     }
   }
 }
