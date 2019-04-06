@@ -26,7 +26,7 @@ export default class Home extends Component {
       <main className={styles.Home}>
         <img
           className="background-img"
-          src={require('../assets/img/backgroundImage.jpg')}
+          src={require('../assets/img/labtopbackground.jpg')}
           alt="Bitfront ride sharing app"
         />
         <HamburgerMenu
