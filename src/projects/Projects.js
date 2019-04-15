@@ -24,11 +24,9 @@ export default class Projects extends Component {
           isCurrentlyOpen={isCurrentlyOpen}
           isLinksVisible={isLinksVisible}
         />
-
         <h1 className="subtitle lines">
           <span>projects! </span>
         </h1>
-
         <section className="main-container">
           <div className="inner-container">
             <div className="thumbnails">

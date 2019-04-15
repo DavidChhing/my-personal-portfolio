@@ -97,10 +97,16 @@
     input[type='submit']:hover,
     input[type='reset']:hover,
     input[type='button']:hover,
+    button,
+    .button {
+      background-color: #308f85;
+    }
+    input[type='submit']:hover,
+    input[type='reset']:hover,
+    input[type='button']:hover,
     button:hover,
     .button:hover {
-      // background-color: #82cec6;
-      background-color: #308f85;
+      background-color: #82cec6;
     }
 
     input[type='submit'].style2,
