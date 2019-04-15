@@ -51,7 +51,7 @@ export default class Contact extends Component {
           isLinksVisible={isLinksVisible}
         />
         <form onSubmit={this.handleFormSubmit} className="form">
-          <h1>Wanna chat?</h1>
+          <h1 className="header">Wanna chat?</h1>
           <p>New projects, freelance inquiry, or even coffee.</p>
 
           <fieldset className="form-group">

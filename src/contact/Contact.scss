@@ -1,8 +1,13 @@
+@import '../styles/Variables.scss';
 :local(.Contact) {
   text-align: center;
   .form {
     margin: 3rem 1.5rem 0 1.5rem;
+    font-size: 1.2rem;
 
+    .header {
+      font-size: 2rem;
+    }
     .form-group {
       margin: 2rem 0 2rem 0;
       padding: 0;
@@ -14,26 +19,29 @@
 
       .form-input,
       .form-textarea {
+        color: black;
         display: block;
         padding: 0.5rem 0.75rem;
-        width: 100%;
+        margin: 0 auto;
         border-bottom: 2px solid silver;
       }
       .submit-button {
         width: 9rem;
         height: 3rem;
         border-radius: 7%;
-        background-color: orange;
+        background-color: cadetblue;
+        font-size: 1.2rem;
       }
     }
   }
 
   .bottom-half-contact {
-    border: 1px solid blue;
-    max-width: 80vw;
+    max-width: 400px;
     max-height: 20vh;
     margin-top: 5vh;
     line-height: 1.5;
+    margin: 0 auto;
+    font-size: 1.2rem;
 
     dl {
       overflow: hidden;
@@ -47,8 +55,39 @@
 
     dd {
       float: right;
-      width: 50%;
+      width: 60%;
       text-align: start;
+    }
+  }
+
+  @media screen and (max-width: 480px) and (min-width: 200px) {
+    .form-input,
+    .form-textarea {
+      min-width: 300px;
+    }
+  }
+  @media screen and(max-width: 736px) and (min-width: 481px) {
+    .form-input,
+    .form-textarea {
+      min-width: 425px;
+    }
+  }
+  @media screen and(max-width: 980px) and (min-width: 737px) {
+    .form-input,
+    .form-textarea {
+      min-width: 550px;
+    }
+  }
+  @media screen and(max-width: 1280px) and (min-width: 981px) {
+    .form-input,
+    .form-textarea {
+      min-width: 725px;
+    }
+  }
+  @media screen and(max-width: 1680px) and (min-width: 1281px) {
+    .form-input,
+    .form-textarea {
+      min-width: 1000px;
     }
   }
 }
