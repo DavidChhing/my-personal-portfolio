@@ -4,9 +4,33 @@
   position: relative;
   min-height: 129vh;
   text-align: center;
-  .header {
-    font-family: $default-header-font;
+  font-family: $default-header-font;
+  .subtitle {
+    margin: 0 0 1em 0;
+    font-size: 3rem;
   }
+
+  .lines {
+    margin-top: 4rem;
+    line-height: 0.05;
+    text-align: center;
+  }
+
+  .lines span {
+    display: inline-block;
+    position: relative;
+  }
+
+  .lines span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+
+  .lines span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
   .content-container {
     font-family: $default-body-font;
     margin: 0 1rem;
@@ -15,6 +39,82 @@
 
     .container-subheaders {
       font-family: $default-subheader-font;
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    .content-container {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+    }
+
+    .lines span:before,
+    .lines span:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      top: 0;
+      width: 750px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .content-container {
+      width: 97%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .lines span:before,
+    .lines span:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      top: 0;
+      width: 450px;
+    }
+  }
+
+  @media screen and (max-width: 736px) {
+    .content-container {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .lines span:before,
+    .lines span:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      top: 0;
+      width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .content-container {
+      width: 87%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .lines span:before,
+    .lines span:after {
+      content: '';
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      width: 100px;
     }
   }
 }

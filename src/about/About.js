@@ -25,7 +25,10 @@ export default class About extends Component {
           isCurrentlyOpen={isCurrentlyOpen}
           isLinksVisible={isLinksVisible}
         />
-        <h1 className="header">About Me!</h1>
+
+        <h1 className="subtitle lines">
+          <span>About Me!</span>
+        </h1>
         <section className="content-container">
           <p>
             I am a full stack web developer who has a keen interest in front end
