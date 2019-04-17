@@ -37,6 +37,10 @@
     border: 2px solid black;
     padding: 1rem;
 
+    .alchemy-link {
+      text-decoration: underline;
+    }
+
     .container-subheaders {
       font-family: $default-subheader-font;
     }

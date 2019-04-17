@@ -38,30 +38,23 @@ export default class About extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <strong> Alchemys code lab </strong>
+              <strong className="alchemy-link"> Alchemys code lab </strong>
             </a>
-            where I completed their rigorous career track program learning full
-            stack software development. I am overly persistent when it comes to
-            coding and I enjoy taking on new challenges.
-          </p>
-          <h3 className="container-subheaders">Interest</h3>
-          <p>
-            I value simplicity, structure, clean code, and ensuring every action
-            or item has a purpose.
+            where I completed the full-stack software development program. After
+            completing the course, I realized that I enjoyed front end
+            development and love bringing ideas and designs to life through
+            code. I value simplicity, structure, clean code, and ensuring every
+            action or item has a purpose. I am overly persistent when it comes
+            to new obstacles or challenges and I enjoy taking on more than I can
+            bite.
           </p>
           <h3 className="container-subheaders">Things I enjoy designing:</h3>
           UX, UI, Web, Mobile, Apps
-          <h3 className="container-subheaders">Skills</h3>
-          <p>
-            I tend to code things from scratch and allow my imagination to take
-            over to bring life to new ideas within the browser.
-          </p>
           <h3 className="container-subheaders">Languages I speak:</h3>
           <h5>Front-End:</h5>
-          HTML, CSS, Sass, Styled Components,
+          HTML, CSS, SASS, React
           <h5>Back-End:</h5>
-          Javascript, React, Redux, NodeJS,Express, MongoDB, Firebase, Jquery,
-          Jest, graphQL, TDD.
+          Javascript, Redux, NodeJS, Express, MongoDB, Jest, graphQL
         </section>
         <PageFooterCopyright />
       </main>
